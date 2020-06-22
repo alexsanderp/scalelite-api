@@ -1,0 +1,2 @@
+DEBUG = True
+BUNDLE_ERRORS = True
