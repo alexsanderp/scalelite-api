@@ -2,7 +2,7 @@ version: '3'
 services:
   scalelite-flask-api:
     build: .
-    image: scalelite-flask-api:latest
+    image: alexsanderp/scalelite-flask-api:latest
     container_name: scalelite-flask-api
     restart: unless-stopped
     ports:
