@@ -1,0 +1,13 @@
+version: '3'
+services:
+  scalelite-flask-api:
+    build: .
+    image: scalelite-flask-api:latest
+    container_name: scalelite-flask-api
+    restart: unless-stopped
+    ports:
+      - 5000:5000
+    environment:
+      - SCALELITE_BIN_PATH=docker exec scalelite-api bin/rake
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
