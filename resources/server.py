@@ -24,6 +24,15 @@ class Servers(Resource):
 
 class Server(Resource):
     @staticmethod
+    def put(id):
+        parser = reqparse.RequestParser()
+        parser.add_argument('load_multiplier', type=float)
+        args = parser.parse_args()
+        if args['load_multiplier']:
+            scalelite.set_load_multiplier_server(id, args['load_multiplier'])
+        return None, HTTPStatus.OK
+
+    @staticmethod
     def delete(id):
         scalelite.remove_server(id)
         return None, HTTPStatus.OK
