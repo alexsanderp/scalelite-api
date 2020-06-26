@@ -1,1 +1,1 @@
-# scalelite-api
+# scalelite-flask-api
