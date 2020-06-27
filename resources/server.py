@@ -22,6 +22,11 @@ class Servers(Resource):
         )
         return {"server_id": server_id}, HTTPStatus.OK
 
+    @staticmethod
+    def get():
+        list_servers = scalelite.list_servers()
+        return list_servers, HTTPStatus.OK
+
 
 class Server(Resource):
     @staticmethod
