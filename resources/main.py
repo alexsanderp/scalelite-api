@@ -1,6 +1,6 @@
 from http import HTTPStatus
 
-from flask_restful import Resource, reqparse
+from flask_restful import Resource
 from scalelite import Scalelite
 from env_vars import SCALELITE_BIN_PATH
 
