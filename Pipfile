@@ -6,9 +6,9 @@ verify_ssl = true
 [dev-packages]
 
 [packages]
-scalelite = "*"
 flask = "*"
 flask-restful = "*"
+scalelite = "*"
 
 [requires]
 python_version = "3.7"
