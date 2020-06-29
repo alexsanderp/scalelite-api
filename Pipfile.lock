@@ -111,11 +111,11 @@
         },
         "scalelite": {
             "hashes": [
-                "sha256:27c2d954b7eb488edca6d5cc9c5c6278564c65ad49b6f2a8582fab53fce2d999",
-                "sha256:6b1fe9e4a4e0db2331b7f5076307085a6c950c12b296cba44685936892825260"
+                "sha256:3350d032c006c8d2df86a3290b396c232b1490739360cbc1b277fda784ed20e9",
+                "sha256:8c7d21704a386a6ef9766b0159cb58497769d0a59582edf6389383c149309907"
             ],
             "index": "pypi",
-            "version": "==0.1.1"
+            "version": "==0.1.2"
         },
         "six": {
             "hashes": [
